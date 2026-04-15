@@ -20,7 +20,6 @@ const HeaderContainer = styled.header`
 `;
 
 const HeaderContent = styled.div`
-  max-width: 1126px;
   margin: 0 auto;
   display: flex;
   align-items: center;
