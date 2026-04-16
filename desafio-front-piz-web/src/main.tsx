@@ -3,12 +3,16 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import { Header } from './components/Header.tsx'
-import TextPigz from './components/TextPigz.tsx'
+import Nav from './components/Nav.tsx'
+import { Form } from './components/Form.tsx'
+
+<link rel="stylesheet" href="https://use.typekit.net/iiz4uxt.css"></link>
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     {/* <App /> */}
      <Header />
-     <TextPigz />
+     <Nav />
+     <Form />
   </StrictMode>,
 )
