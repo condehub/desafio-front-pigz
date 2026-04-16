@@ -152,6 +152,8 @@ export const FormElement = styled.form`
 `;
 
 export const TituloForm = styled.h2`
+  margin-bottom: 4px;
+  text-align: left;
   color: #333333;
   font-size: 24px;
   margin: 0 0 8px 0;
@@ -159,6 +161,8 @@ export const TituloForm = styled.h2`
 `;
 
 export const Subtitulo = styled.p`
+  margin-bottom: 4px;
+  text-align: left;
   font-size: 13px;
   color: #666666;
   margin: 0 0 24px 0;
@@ -172,9 +176,14 @@ export const InputGroup = styled.div`
   margin-bottom: 16px;
 `;
 
+export const InputRow = styled.div`
+  display: flex;
+  gap: 16px;
+  width: 100%;`
+
 export const Label = styled.label`
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: #333333;
   margin-bottom: 6px;
@@ -190,6 +199,7 @@ export const StyledInput = styled.input`
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   outline: none;
+  margin-bottom: 12px;
 
   &::placeholder {
     color: #BBBBBB;
@@ -262,5 +272,42 @@ export const BotaoContinuar = styled.button`
 
   &:hover {
     background-color: #E55A1B;
+  }
+`;
+
+// Adicione isso no seu styles.ts
+export const StyledSelect = styled.select`
+  color: black;
+  background-color: white;
+  border: 1px solid #CCCCCC;
+  border-radius: 12px;
+  
+  /* Aumentamos o padding da direita para 40px, para o texto não encostar na seta */
+  padding: 14px 40px 14px 14px; 
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+
+  /* --- O TRUQUE DA SETINHA --- */
+  
+  /* 1. Remove a seta nativa do navegador */
+  appearance: none;
+  -webkit-appearance: none; /* Para funcionar no Safari/Chrome antigo */
+  -moz-appearance: none;    /* Para funcionar no Firefox */
+
+  /* 2. Cria uma nova seta usando uma imagem SVG inserida diretamente no código */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  
+  /* 3. Posiciona essa nova seta onde queremos: alinhada à direita, com 16px de respiro, e centralizada no meio */
+  background-repeat: no-repeat;
+  background-position: right 16px center; 
+  background-size: 16px; /* Define o tamanho da setinha */
+
+  /* --------------------------- */
+
+  &:focus {
+    border-color: #FA641E;
   }
 `;
