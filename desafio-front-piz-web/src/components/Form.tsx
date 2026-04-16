@@ -50,10 +50,21 @@ export function Form() {
               <S.InputGroup>
                 <S.Label>CEP</S.Label>
                 <S.StyledInput type="text" placeholder="00000-00" />
-                <S.Label>Estado</S.Label>
-                <S.StyledInput type="text" placeholder="Selecione" />
-                <S.Label>Cidade</S.Label>
-                <S.StyledInput type="text" placeholder="Avenida Brasil" />
+                <S.InputRow>
+                  <S.InputGroup>
+                    <S.Label>Estado</S.Label>
+                    <S.StyledInput type="text" placeholder="Selecione" />
+                  </S.InputGroup>
+                <S.InputGroup>
+                  
+
+
+                  <S.Label>Cidade</S.Label>
+                  <S.StyledInput type="text" placeholder="Avenida Brasil" />
+                </S.InputGroup>
+                </S.InputRow>
+                
+                
                 <S.Label>Endereço</S.Label>
                 <S.StyledInput type="text" placeholder="123" />
                 <S.Label>Complemento</S.Label>

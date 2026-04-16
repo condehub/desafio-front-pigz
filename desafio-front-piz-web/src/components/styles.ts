@@ -173,7 +173,8 @@ export const Subtitulo = styled.p`
 export const InputGroup = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin-bottom: 16px
+  flex: 1;
 `;
 
 export const InputRow = styled.div`
@@ -200,13 +201,15 @@ export const StyledInput = styled.input`
   font-family: "Poppins", sans-serif;
   outline: none;
   margin-bottom: 12px;
-
+  width: 100%;
+  box-sizing: border-box;
   &::placeholder {
     color: #BBBBBB;
   }
 
   &:focus {
     border-color: #FA641E; /* Borda fica laranja ao clicar */
+    outline: none;
   }
 `;
 
