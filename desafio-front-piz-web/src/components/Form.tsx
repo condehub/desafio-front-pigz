@@ -26,7 +26,6 @@ const TituloForm = styled.h1`
   margin: 10px 5px;
   font-family: "poppins", sans-serif;
   font-weight: 700;
-  font-style: normal;
 `
 const TextoForm = styled.p`
   `
@@ -37,13 +36,13 @@ export function Form() {
         <Form1>
           <TituloForm>Quero Vender no Pigz</TituloForm>
           <p>Dê o primeiro passo para aumentar suas vendas</p>
-          <label>Nome</label>
+          <label>Nome:</label>
           <br />
           <input type="text"/>
-          <label>E-mail</label>
+          <label>E-mail:</label>
           <br />
           <input type="text"/>
-          <label>Telefone</label>
+          <label>Telefone:</label>
           <br />
           <input type="text"/>
         </Form1>
