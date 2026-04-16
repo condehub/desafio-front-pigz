@@ -126,3 +126,141 @@ export const Paragrafo = styled.p`
 `;
 
 
+// FORM STYLES //
+
+export const FormContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+`;
+
+// A "caixa" branca do formulário
+export const FormCard = styled.section`
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 380px; /* Largura ideal para esse tipo de card */
+  border-radius: 30px; /* Bordas bem arredondadas como na imagem */
+  padding: 32px;
+  /* Uma sombra suave opcional para destacar do fundo */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); 
+`;
+
+// O formulário usando Flexbox para empilhar tudo perfeitamente
+export const FormElement = styled.form`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const TituloForm = styled.h2`
+  color: #333333;
+  font-size: 24px;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+`;
+
+export const Subtitulo = styled.p`
+  font-size: 13px;
+  color: #666666;
+  margin: 0 0 24px 0;
+  font-family: "Poppins", sans-serif;
+`;
+
+// Grupo para manter o Label e o Input juntos
+export const InputGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+`;
+
+export const Label = styled.label`
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 6px;
+`;
+
+// Estilo padrão para os inputs de Nome e E-mail
+export const StyledInput = styled.input`
+  color: black;
+  background-color: white;
+  border: 1px solid #CCCCCC;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+
+  &::placeholder {
+    color: #BBBBBB;
+  }
+
+  &:focus {
+    border-color: #FA641E; /* Borda fica laranja ao clicar */
+  }
+`;
+
+/* --- ESTILOS ESPECÍFICOS DO TELEFONE --- */
+export const PhoneContainer = styled.div`
+  color: black;
+  display: flex;
+  border: 1px solid #CCCCCC;
+  border-radius: 12px;
+  overflow: hidden; /* Mantém o fundo cinza contido nas bordas */
+
+  &:focus-within {
+    border-color: #FA641E;
+  }
+`;
+
+export const PhonePrefix = styled.div`
+  background-color: #F4F4F4;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #888888;
+  border-right: 1px solid #CCCCCC; /* Linha divisória */
+`;
+
+export const PhoneInput = styled.input`
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 14px;
+  font-size: 14px;
+  flex: 1; /* Ocupa o restante do espaço */
+  outline: none;
+  font-family: "Poppins", sans-serif;
+
+  &::placeholder {
+    color: #BBBBBB;
+  }
+`;
+/* -------------------------------------- */
+
+export const AvisoLegal = styled.p`
+  font-size: 11px;
+  color: #666666;
+  line-height: 1.5;
+  margin: 16px 0 24px 0;
+  font-family: "Poppins", sans-serif;
+`;
+
+export const BotaoContinuar = styled.button`
+  background-color: #FA641E;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 16px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #E55A1B;
+  }
+`;
