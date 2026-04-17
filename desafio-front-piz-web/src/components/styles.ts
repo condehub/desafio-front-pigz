@@ -314,3 +314,20 @@ export const StyledSelect = styled.select`
     border-color: #FA641E;
   }
 `;
+
+// Middle-section styles
+
+// Logo do Pigz-fone 
+export const PigzLogo = styled.img`
+  width: 30%;
+`
+// Container para colocar a Imagem dentro
+export const ImgContainer = styled.div`
+
+`;
+
+// Container para toda a seção do meio 
+export const ContainerSection = styled.section`
+  display: flex:
+  flex-direction: row;
+`
