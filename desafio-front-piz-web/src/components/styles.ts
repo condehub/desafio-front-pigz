@@ -51,7 +51,7 @@ export const PartnerButton = styled.button`
 `;
 
 export const Logo = styled.img
-`height: 40px;
+  `height: 40px;
   width: auto;
 
   @media (max-width: 768px) {
@@ -62,13 +62,16 @@ export const Logo = styled.img
 // --- ESTILOS PRINCIPAIS ---
 
 export const Texto = styled.section`
+  border: 2px solid red;
   background-color: #FA641E;
   color: #FFFFFF;
   padding: 40px 20px;
+  width: 100%;
 `;
 
 // NOVO: Um container para limitar a largura máxima e manter tudo centralizado na tela
 export const Container = styled.div`
+  border: 2px solid red;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -78,6 +81,7 @@ export const Container = styled.div`
 
 // NOVO: A primeira div que você pediu, que coloca o texto e a imagem lado a lado
 export const TopSection = styled.div`
+  border: 2px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center; /* Centraliza a imagem e o título na vertical */
@@ -85,12 +89,13 @@ export const TopSection = styled.div`
 
   /* RESPONSIVIDADE: Empilha a imagem abaixo do título no celular */
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
   }
 `;
 
 export const FirstText = styled.h2`
+  border: 2px solid red;
   font-size: 40pt;
   font-weight: bold;
   margin: 0; /* Removida a margem pois o gap do Container já faz o espaçamento */
@@ -103,6 +108,7 @@ export const FirstText = styled.h2`
 `;
 
 export const Hamburguer = styled.img`
+  border: 2px solid red;
   max-width: 60%; /* Ajuste o tamanho da imagem conforme necessário */
   height: auto;
   object-fit: contain;
@@ -114,10 +120,10 @@ export const Hamburguer = styled.img`
 `;
 
 export const Paragrafo = styled.p`
+  border: 2px solid red;
   font-size: 16pt;
   line-height: 1.5;
   margin: 0;
-  max-width: 80%; /* Evita que o parágrafo estique até o final da tela em monitores largos */
 
   @media (max-width: 768px) {
     max-width: 100%;
@@ -132,10 +138,12 @@ export const FormContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 20px;
+  background-color: #FA641E;
 `;
 
 // A "caixa" branca do formulário
 export const FormCard = styled.section`
+  margin: 80px 0;
   background-color: #FFFFFF;
   width: 100%;
   max-width: 380px; /* Largura ideal para esse tipo de card */
@@ -319,15 +327,29 @@ export const StyledSelect = styled.select`
 
 // Logo do Pigz-fone 
 export const PigzLogo = styled.img`
-  width: 30%;
+  width: 60%;
 `
 // Container para colocar a Imagem dentro
 export const ImgContainer = styled.div`
-
+  margin: -40px 0;
 `;
 
 // Container para toda a seção do meio 
 export const ContainerSection = styled.section`
-  display: flex:
+  display: flex;
   flex-direction: row;
+  justify-content: center;
 `
+
+export const PigzTexto = styled.h1`
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #333333;
+  margin: 40px 40px;
+  line-height: 1.2;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  max-width: 300px;
+  font-size: 36px;
+  
+`;
