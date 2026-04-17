@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import pigzLogo from '../assets/pigz-fone.svg'
 import * as S from './styles'
+import { Card } from './Card';
 
 
 
@@ -20,6 +21,11 @@ export function Section1() {
       <S.PigzTexto>
         Você tem um novo Pigzdido!
       </S.PigzTexto>
+    </S.ContainerSection>
+    <S.ContainerSection>
+      <Card>
+        
+      </Card>
     </S.ContainerSection>
     
     </>
