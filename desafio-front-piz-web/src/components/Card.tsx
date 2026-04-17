@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import pigzLogo from '../assets/pigz-fone.svg'
 import * as S from './styles'
 import marketplaceLogo from '../assets/marketplace-icon.svg'
 import phoneLogo from '../assets/smartphone-logo.svg'
@@ -11,8 +10,8 @@ const LogoImage = styled.img`
 `
 
 const Title = styled.h2`
-  font-weight: bold;
-  color: 
+  font-weight: ;
+  color: black;
 `
 // const CardContainer= styled.div`
 //   display: flex;
@@ -28,22 +27,22 @@ const Subtitles = styled.p`
 function CardContainer() {
   const [cards, setCards] = useState([{
         id: 1,
-        icon: '{marketplaceLogo}',
+        icon: marketplaceLogo,
         title: 'Marketplace',
         subtitle: 'Pra sua loja vender mais'
       },{
         id: 2,
-        icon: '{smartphoneLogo}',
+        icon: phoneLogo,
         title: 'É fácil e rápido',
         subtitle: 'Fazer um pedido no Pigz'
       },{
         id: 3,
-        icon: '{pigzGestao}',
+        icon: pigzGestao,
         title: 'Pigz Gestão',
         subtitle: 'Você no controle, sempre'
       },{
         id: 4,
-        icon: '{printerLogo}',
+        icon: printerLogo,
         title: 'Vias de impressão',
         subtitle: 'Personalizáveis'
       }
