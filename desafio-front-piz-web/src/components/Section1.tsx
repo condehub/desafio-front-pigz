@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import pigzLogo from '../assets/pigz-fone.svg'
 import * as S from './styles'
-import CardContainer from './Card';
-
+import CardContainer from './Card/Card';
+import { CardFooter } from './Card/CardFooter';
 
 
 
@@ -26,6 +26,7 @@ export function Section1() {
       <CardContainer>
       </CardContainer>
     </S.ContainerSection>
+    <CardFooter></CardFooter>
     
     </>
   );

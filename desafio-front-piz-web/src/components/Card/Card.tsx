@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import * as S from './styles'
+import { useState } from 'react';
+import * as S from '../styles'
 import marketplaceLogo from '../assets/marketplace-icon.svg'
 import phoneLogo from '../assets/smartphone-logo.svg'
 import pigzGestao from '../assets/pigzgestao-logo.svg'
@@ -12,7 +11,7 @@ import printerLogo from '../assets/printer-logo.svg'
 
 
 function CardContainer() {
-  const [cards, setCards] = useState([{
+  const [cards] = useState([{
         id: 1,
         icon: marketplaceLogo,
         title: 'Marketplace',
