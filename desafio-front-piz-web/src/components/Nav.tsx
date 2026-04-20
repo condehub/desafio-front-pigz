@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import hamburguerFoto from '../assets/hamburger-with-floating-ingredients.png';
 import * as S from './styles.ts'
+import { Form } from './form/Form.tsx';
 
 // --- COMPONENTE PRINCIPAL ---
 
@@ -22,6 +23,7 @@ function Nav() {
         </S.Paragrafo>
 
       </S.Container>
+      <Form></Form>
     </S.Texto>
   );
 }

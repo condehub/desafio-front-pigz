@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import pigzLogo from '../assets/pigz-logo.svg'
-import * as S from './styles'
+import pigzLogo from '../../assets/pigz-logo.svg'
+import * as S from '../styles'
 
 export function Header() {
   return (

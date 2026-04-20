@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import * as S from '../styles'
-import marketplaceLogo from '../assets/marketplace-icon.svg'
-import phoneLogo from '../assets/smartphone-logo.svg'
-import pigzGestao from '../assets/pigzgestao-logo.svg'
-import printerLogo from '../assets/printer-logo.svg'
+import marketplaceLogo from '../../assets/marketplace-icon.svg'
+import phoneLogo from '../../assets/smartphone-logo.svg'
+import pigzGestao from '../../assets/pigzgestao-logo.svg'
+import printerLogo from '../../assets/printer-logo.svg'
 
 
 // Styled Components
