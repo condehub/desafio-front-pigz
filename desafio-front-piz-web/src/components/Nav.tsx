@@ -23,7 +23,6 @@ function Nav() {
         </S.Paragrafo>
 
       </S.Container>
-      <Form></Form>
     </S.Texto>
   );
 }

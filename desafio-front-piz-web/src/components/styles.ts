@@ -369,6 +369,8 @@ export const GridContainer= styled.div`
 `;
 
 export const CardWrapper = styled.div`
+  width: 250px;
+  height: 225px;
   background-color: #FAFAFA;
   border-radius: 20%;
   padding: 40px 40px;
@@ -380,15 +382,18 @@ export const CardWrapper = styled.div`
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
 `;
-export const Subtitles = styled.p`
+
+export const Subtitles = styled.p` 
   color: black;
 `
 
-export const CardFooter = styled.div`
 
-`
+interface StyledLineProps {
+  $isActive: boolean; // Avisamos que $isActive existe e é do tipo verdadeiro/falso
+}
 
-export const StyledLine = styled.div`
+export const StyledLine = styled.div<StyledLineProps>`
+  
   width: 100%;
   height: 4px;
   background-color: ${(props) => (props.$isActive ? '#FA641E' : '#EEEEEE')}; // Laranja se ativo, cinza se inativo
@@ -398,4 +403,12 @@ export const StyledLine = styled.div`
   &:hover {
     background-color: ${(props) => (props.$isActive ? '#FA641E' : '#BDBDBD')};
   }
+`;
+
+export const TrailContainer = styled.div`
+  margin: 50px auto;
+  align-items: center; 
+  display: flex;
+  width: 70%;
+  gap: 12px; /* Controla o espaço exato entre as linhas */
 `;
