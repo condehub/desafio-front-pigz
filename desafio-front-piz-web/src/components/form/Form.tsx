@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as S from "./styles.ts";
+import * as S from "../styles.ts";
 
 export function Form() {
   // 1. A Memória (Estado)

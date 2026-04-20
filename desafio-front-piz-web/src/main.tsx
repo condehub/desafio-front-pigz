@@ -4,8 +4,8 @@ import './index.css'
 import App from './App.tsx'
 import { Header } from './components/Header.tsx'
 import Nav from './components/Nav.tsx'
-import { Form } from './components/Form.tsx'
-import { Section1 } from './components/Section1.tsx'
+import { Form } from './components/form/Form.tsx'
+import { Section1 } from './components/sections/CardsSection.tsx'
 
 <link rel="stylesheet" href="https://use.typekit.net/iiz4uxt.css"></link>
 
