@@ -19,10 +19,11 @@ const Text = styled.h2`
     margin-bottom: 40px;
 `
 
-const Subtitles = styled.p`
+const SubtitlesFooter = styled.p`
     color: black;
-    width: 300px;
+    width: 320px;
     font-size: 16pt;
+    font-weight: 500;
 `
 export function CardFooter() {
   return (
@@ -31,9 +32,9 @@ export function CardFooter() {
         <Text>
           Tudo que você precisa por apenas R$199/mês
         </Text>
-        <Subtitles>
+        <SubtitlesFooter>
           Tenha todas as funcionalidades Pigz sem taxa de adesão, sem comissão por nada venda, sem letrinhas miúdas.
-        </Subtitles>
+        </SubtitlesFooter>
       </TextDiv>
     </>
   )
