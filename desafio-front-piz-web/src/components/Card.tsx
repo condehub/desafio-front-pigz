@@ -9,39 +9,7 @@ import printerLogo from '../assets/printer-logo.svg'
 
 // Styled Components
 
-const LogoImage = styled.img`
-  width: 50%;
-`
 
-const Title = styled.h2`
-  font-weight: ;
-  color: black;
-`
-const GridContainer= styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const CardWrapper = styled.div`
-  background-color: #FAFAFA;
-  border-radius: 20%;
-  padding: 40px 40px;
-  border: 1px solid transparent;
-  transition: border 0.15s;
-
-  &:hover {
-    border: 3px solid #E0E0E0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-`;
-const Subtitles = styled.p`
-  color: black;
-`
 
 function CardContainer() {
   const [cards, setCards] = useState([{
@@ -70,13 +38,13 @@ function CardContainer() {
     return (
       <div className="card-container">
         {cards.map((card) => (
-          <GridContainer>
-            <CardWrapper key={card.id} className="card">
-              <LogoImage src={card.icon} className={card.title} />
-              <Title>{card.title}</Title>
-              <Subtitles>{card.subtitle}</Subtitles>
-            </CardWrapper>
-          </GridContainer>
+          <S.GridContainer>
+            <S.CardWrapper key={card.id} className="card">
+              <S.LogoImage src={card.icon} className={card.title} />
+              <S.Title>{card.title}</S.Title>
+              <S.Subtitles>{card.subtitle}</S.Subtitles>
+            </S.CardWrapper>
+          </S.GridContainer>
           
         ))}
       </div>

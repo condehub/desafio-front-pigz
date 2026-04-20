@@ -353,3 +353,39 @@ export const PigzTexto = styled.h1`
   font-size: 36px;
   
 `;
+
+// Styles dos cards
+
+export const LogoImage = styled.img`
+  width: 50%;
+`
+
+export const Title = styled.h2`
+  font-weight: ;
+  color: black;
+`
+export const GridContainer= styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const CardWrapper = styled.div`
+  background-color: #FAFAFA;
+  border-radius: 20%;
+  padding: 40px 40px;
+  border: 1px solid transparent;
+  transition: border 0.15s;
+
+  &:hover {
+    border: 3px solid #E0E0E0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+`;
+export const Subtitles = styled.p`
+  color: black;
+`
