@@ -387,3 +387,15 @@ export const Subtitles = styled.p`
 export const CardFooter = styled.div`
 
 `
+
+export const StyledLine = styled.div`
+  width: 100%;
+  height: 4px;
+  background-color: ${(props) => (props.$isActive ? '#FA641E' : '#EEEEEE')}; // Laranja se ativo, cinza se inativo
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  &:hover {
+    background-color: ${(props) => (props.$isActive ? '#FA641E' : '#BDBDBD')};
+  }
+`;

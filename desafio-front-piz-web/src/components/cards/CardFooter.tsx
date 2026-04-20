@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 
 const TextDiv = styled.div`
+  margin-top: 30px;
+  margin-bottom: 50px;
   padding: 30px 10px;
   display: flex;
   justify-content: center;

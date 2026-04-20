@@ -7,6 +7,8 @@ import Nav from './components/Nav.tsx'
 import { Form } from './components/form/Form.tsx'
 import { Section1 } from './components/sections/CardsSection.tsx'
 
+import { GestaoDeEntregadoresButton } from './components/buttons/GestaoDeEntregadoresButton.tsx'
+
 <link rel="stylesheet" href="https://use.typekit.net/iiz4uxt.css"></link>
 
 createRoot(document.getElementById('root')!).render(
@@ -16,6 +18,7 @@ createRoot(document.getElementById('root')!).render(
      <Nav />
      <Form />
      <Section1 />
+     <GestaoDeEntregadoresButton></GestaoDeEntregadoresButton>
   </StrictMode>,
 )
 
