@@ -23,7 +23,6 @@ export const PartnerButton = styled.button`
   border: none;
   border-radius: 9999px;
   padding: 12px 24px;
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
@@ -167,7 +166,6 @@ export const Subtitulo = styled.p`
   font-size: 13px;
   color: #666666;
   margin: 0 0 24px 0;
-  font-family: "Poppins", sans-serif;
 `;
 
 // Grupo para manter o Label e o Input juntos
@@ -199,7 +197,6 @@ export const StyledInput = styled.input`
   border-radius: 12px;
   padding: 14px;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
   outline: none;
   margin-bottom: 12px;
   width: 100%;
@@ -246,7 +243,6 @@ export const PhoneInput = styled.input`
   font-size: 14px;
   flex: 1; /* Ocupa o restante do espaço */
   outline: none;
-  font-family: "Poppins", sans-serif;
 
   &::placeholder {
     color: #BBBBBB;
@@ -259,7 +255,6 @@ export const AvisoLegal = styled.p`
   color: #666666;
   line-height: 1.5;
   margin: 16px 0 24px 0;
-  font-family: "Poppins", sans-serif;
 `;
 
 export const BotaoContinuar = styled.button`
@@ -271,7 +266,6 @@ export const BotaoContinuar = styled.button`
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  font-family: "Poppins", sans-serif;
   transition: background-color 0.2s;
 
   &:hover {
@@ -289,7 +283,6 @@ export const StyledSelect = styled.select`
   /* Aumentamos o padding da direita para 40px, para o texto não encostar na seta */
   padding: 14px 40px 14px 14px; 
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
   outline: none;
   width: 100%;
   cursor: pointer;
@@ -336,7 +329,6 @@ export const ContainerSection = styled.section`
 
 export const PigzTexto = styled.h1`
   text-align: center;
-  font-family: 'Poppins', sans-serif;
   color: #333333;
   margin: 40px 40px;
   line-height: 1.2;
