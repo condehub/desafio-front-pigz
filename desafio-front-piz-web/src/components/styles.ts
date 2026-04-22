@@ -406,3 +406,57 @@ export const TrailContainer = styled.div`
   width: 70%;
   gap: 12px; /* Controla o espaço exato entre as linhas */
 `;
+
+// FeatureCard Container
+export const ConteudoContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Garante que o card fique bem no meio da tela */
+  
+  /* O "respiro" (espaço) perfeito entre a trilha de linhas e o card laranja */
+  padding-top: 40px; 
+  padding-bottom: 40px;
+`;
+
+export const FeatureContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 32px;
+`;
+
+export const FeatureTitle = styled.h2`
+  font-size: 32px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 24px;
+`;
+
+export const OrangeCard = styled.div`
+  background-color: #FA641E; // O Laranja da Pigz
+  border-radius: 40px;
+  width: 100%;
+  max-width: 600px; /* Limita o crescimento em telas gigantes */
+  
+  padding: 40px 40px 0 40px; 
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; 
+`;
+
+export const FeatureDescription = styled.p`
+  color: #FFFFFF;
+  font-size: 15pt;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 32px;
+`;
+
+export const FeatureImage = styled.img`
+  width: 100%;
+  max-width: 400px; /* Ajuste conforme o tamanho real da sua imagem */
+  display: block; /* Remove o espaço fantasma que o HTML coloca embaixo de imagens */
+`;
