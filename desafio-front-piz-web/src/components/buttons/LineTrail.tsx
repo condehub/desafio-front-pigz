@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { LineButton } from "./LineButton";
 import { FeatureCard } from "../cards/FeatureCard";
 import imgSmartphones from '../../assets/smartphones-img.png'
+import imgNotebook from '../../assets/notebook-smartphone.png'
+import imgDelivery from '../../assets/delivery-gestao.png'
+import imgPayment from '../../assets/payment-card.png'
 import * as S from '../styles'
 
 const ORDEM_DAS_ABAS = [
@@ -61,26 +64,26 @@ export function LineTrail(){
         {abaAtiva === 'pigz-gestao' && (
           <FeatureCard 
             titulo="Pigz Gestão"
-            descricao="Você no controle, sempre. Gerencie seu restaurante de forma simples e rápida."
-            imagemUrl="/gestao-img.png"
+            descricao="Acompanhe suas vendas em tempo real, no computador ou no celular, de onde estiver. Faça alterações de preços e disponibilidade de produtos rapidamente, como deve ser."
+            imagemUrl={imgNotebook}
             imagemAlt="Telas do aplicativo Pigz Gestão"
           />
         )}
 
-        {abaAtiva === 'pigz-gestao' && (
+        {abaAtiva === 'delivery-gestao' && (
           <FeatureCard 
-            titulo="Pigz Gestão"
-            descricao="Você no controle, sempre. Gerencie seu restaurante de forma simples e rápida."
-            imagemUrl="/gestao-img.png"
-            imagemAlt="Telas do aplicativo Pigz Gestão"
+            titulo="Gestão de entregadores"
+            descricao="A ferramenta ideal pra quem tem entrega própria. Controle de entregas por motoboy, geração de relatórios por entregas e por taxas de entrega, individualmente."
+            imagemUrl={imgDelivery}
+            imagemAlt="Telas do aplicativo Gestão de entregadores"
           />
         )}
 
-        {abaAtiva === 'pigz-gestao' && (
+        {abaAtiva === 'online-payment' && (
           <FeatureCard 
-            titulo=""
-            descricao="Você no controle, sempre. Gerencie seu restaurante de forma simples e rápida."
-            imagemUrl="/gestao-img.png"
+            titulo="Pagamento on-line"
+            descricao="Segurança e agilidade para receber e entregar pedidos. Seus clientes pagam com Pix ou cartão de crédito pelo app, e o entregador nem precisa levar a maquininha de cartão."
+            imagemUrl={imgPayment}
             imagemAlt="Telas do aplicativo Pigz Gestão"
           />
         )}

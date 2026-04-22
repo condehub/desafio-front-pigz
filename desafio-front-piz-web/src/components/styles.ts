@@ -1,9 +1,21 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1; /* Termina totalmente visível */ranslateY(0);
+  }
+`;
+
 
 export const HeaderContainer = styled.header`
   width: 100%;
   background-color: #ffffff;
   padding: 16px 0;
+  position: fixed;
 `;
 
 export const HeaderContent = styled.div`
@@ -60,6 +72,7 @@ export const Logo = styled.img
 // --- ESTILOS PRINCIPAIS ---
 
 export const Texto = styled.section`
+  margin-top: 80px;
   background-color: #FA641E;
   color: #FFFFFF;
   padding: 40px 20px;
@@ -423,7 +436,9 @@ export const FeatureContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 32px;
+
+  // animation fade up
+  animation: ${fadeUp} 0.5s ease-out;
 `;
 
 export const FeatureTitle = styled.h2`
@@ -437,26 +452,159 @@ export const OrangeCard = styled.div`
   background-color: #FA641E; // O Laranja da Pigz
   border-radius: 40px;
   width: 90%;
-  max-width: 600px; /* Limita o crescimento em telas gigantes */
-  
+  max-width: 600px; 
+  min-height: 440px;
   padding: 40px 40px 0 40px; 
   
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden; 
+  justify-content: space-between
 `;
 
 export const FeatureDescription = styled.p`
-  color: #FFFFFF;
-  font-size: 15pt;
-  line-height: 1.5;
-  text-align: center;
-  margin-bottom: 32px;
+  @media screen and (max-width: 1500px) {
+    font-size: 15pt;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 32px;
+    width: 390px;
+  } 
+
+  color: white;
 `;
 
 export const FeatureImage = styled.img`
   width: 100%;
   max-width: 400px;
   display: block;
+`;
+
+// --- PRICING CARD STYLES ---
+
+export const PricingWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  gap: 40px;
+  font-family: 'Poppins', sans-serif;
+`;
+
+export const PricingSectionHeader = styled.div`
+  text-align: center;
+  max-width: 560px;
+`;
+
+export const PricingSectionTitle = styled.h2`
+  font-size: 30pt;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+
+  @media (max-width: 768px) {
+    font-size: 22pt;
+  }
+`;
+
+export const PricingSectionDescription = styled.p`
+  font-size: 14pt;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+`;
+
+export const PricingSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+`;
+
+export const PricingCardBox = styled.div`
+  background-color: #F4F4F4;
+  border-radius: 32px;
+  padding: 36px 32px 32px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+`;
+
+export const PricingHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+`;
+
+export const PricingTitle = styled.h2`
+  font-size: 28pt;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+`;
+
+export const PricingSubtitle = styled.p`
+  font-size: 14pt;
+  color: #888888;
+  margin: 0;
+`;
+
+export const PricingFeatureList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+`;
+
+export const PricingFeatureItem = styled.li`
+  font-size: 13pt;
+  color: #444444;
+  padding-left: 0;
+`;
+
+export const PricingPriceBadge = styled.div`
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 16px 24px;
+  display: inline-flex;
+  align-self: flex-start;
+`;
+
+export const PricingPrice = styled.p`
+  font-size: 20pt;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+`;
+
+export const PricingCTA = styled.button`
+  background: linear-gradient(90deg, #FA641E 0%, #FF881F 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  padding: 18px 24px;
+  font-size: 15pt;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 6px 20px rgba(250, 100, 30, 0.35);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 24px rgba(250, 100, 30, 0.45);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0px 4px 12px rgba(250, 100, 30, 0.3);
+  }
 `;

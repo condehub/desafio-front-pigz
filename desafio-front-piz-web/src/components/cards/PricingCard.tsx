@@ -1,0 +1,80 @@
+import * as S from '../styles';
+
+interface PricingCardProps {
+  title: string;
+  subtitle: string;
+  features: string[];
+  price: string;
+  ctaLabel: string;
+  onCtaClick?: () => void;
+}
+
+export function PricingCard({ title, subtitle, features, price, ctaLabel, onCtaClick }: PricingCardProps) {
+  return (
+    <S.PricingCardBox>
+      <S.PricingHeader>
+        <S.PricingTitle>{title}</S.PricingTitle>
+        <S.PricingSubtitle>{subtitle}</S.PricingSubtitle>
+      </S.PricingHeader>
+
+      <S.PricingFeatureList>
+        {features.map((feature) => (
+          <S.PricingFeatureItem key={feature}>{feature}</S.PricingFeatureItem>
+        ))}
+      </S.PricingFeatureList>
+
+      <S.PricingPriceBadge>
+        <S.PricingPrice>{price}</S.PricingPrice>
+      </S.PricingPriceBadge>
+
+      <S.PricingCTA onClick={onCtaClick}>{ctaLabel}</S.PricingCTA>
+    </S.PricingCardBox>
+  );
+}
+
+
+export function PricingSection() {
+  const pigzFeatures = [
+    'Pigz Marketplace',
+    'Página exclusiva',
+    'Pigz Gestão Desktop e Mobile',
+    'Gestão de entregadores',
+    'Vias de impressão personalizáveis',
+  ];
+
+  const paymentFeatures = [
+    'Aceite Pix e Cartão de Crédito',
+    'Antecipação Pix automática',
+    'Não dependa de maquininha de cartão',
+    'Segurança para receber pedidos',
+    'Agilidade para entregar',
+  ];
+
+  return (
+    <S.PricingWrapper>
+      <S.PricingSectionHeader>
+        <S.PricingSectionTitle>E mais: suporte que realmente funciona!</S.PricingSectionTitle>
+        <S.PricingSectionDescription>
+          Respostas automáticas e robôs? Aqui não. Nossa equipe está sempre disponível pra ajudar você e seus clientes.
+        </S.PricingSectionDescription>
+      </S.PricingSectionHeader>
+
+      <S.PricingSection>
+        <PricingCard
+          title="Pigz"
+          subtitle="Tudo o que você precisa"
+          features={pigzFeatures}
+          price="R$199/mês"
+          ctaLabel="Vender no Pigz agora"
+        />
+        <PricingCard
+          title="Pagamento On-line"
+          subtitle="Segurança e agilidade"
+          features={paymentFeatures}
+          price="2,99% por transação"
+          ctaLabel="Saiba mais"
+        />
+      </S.PricingSection>
+    </S.PricingWrapper>
+  );
+}

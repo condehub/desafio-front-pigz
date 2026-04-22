@@ -7,6 +7,7 @@ import { Form } from './components/form/Form.tsx'
 import { Section1 } from './components/sections/CardsSection.tsx'
 import { LineTrail } from './components/buttons/LineTrail.tsx'
 import { GlobalStyle } from './components/GlobalStyle.ts'
+import { PricingSection } from './components/cards/PricingCard.tsx'
 
 <link rel="stylesheet" href="https://use.typekit.net/iiz4uxt.css"></link>
 
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')!).render(
      <Form />
      <Section1 />
      <LineTrail />
+     <PricingSection />
   </StrictMode>,
 )
 

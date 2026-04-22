@@ -17,3 +17,5 @@ export const GlobalStyle = createGlobalStyle`
   button, input, textarea {
     font-family: inherit;
   }`;
+
+  
