@@ -8,6 +8,7 @@ import { Section1 } from './components/sections/CardsSection.tsx'
 import { LineTrail } from './components/buttons/LineTrail.tsx'
 import { GlobalStyle } from './components/GlobalStyle.ts'
 import { PricingSection } from './components/cards/PricingCard.tsx'
+import { Footer } from './components/footer/Footer.tsx'
 
 <link rel="stylesheet" href="https://use.typekit.net/iiz4uxt.css"></link>
 
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')!).render(
      <Section1 />
      <LineTrail />
      <PricingSection />
+     <Footer />
   </StrictMode>,
 )
 

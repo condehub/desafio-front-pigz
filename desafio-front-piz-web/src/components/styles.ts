@@ -473,6 +473,7 @@ export const FeatureDescription = styled.p`
   } 
 
   color: white;
+  text-align: center;
 `;
 
 export const FeatureImage = styled.img`
@@ -641,4 +642,96 @@ export const ContactIcon = styled.img`
 export const ContactPhoneNumber = styled.span`
   font-size: 16pt;
   color: black;
+`;
+
+// --- FOOTER STYLES ---
+
+export const FooterContainer = styled.footer`
+  background-color: #FAFAFA;
+  padding: 60px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #EEEEEE;
+  text-align: left;
+`;
+
+export const FooterContent = styled.div`
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  
+  @media (max-width: 768px) {
+    align-items: flex-start;
+  }
+`;
+
+export const FooterBrand = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+`;
+
+export const FooterLogo = styled.img`
+  width: 120px;
+  height: auto;
+`;
+
+export const FooterSubtitle = styled.p`
+  font-size: 14pt;
+  color: #666666;
+  margin: 0;
+`;
+
+export const FooterAppSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+`;
+
+export const FooterAppTitle = styled.h3`
+  font-size: 16pt;
+  color: #333333;
+  margin: 0;
+  font-weight: 600;
+`;
+
+export const FooterAppLinks = styled.div`
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+`;
+
+export const StoreBadge = styled.img`
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+`;
+
+export const FooterDivider = styled.div`
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  margin: 40px 0 20px;
+  max-width: 1000px;
+`;
+
+export const FooterCopyright = styled.p`
+  font-size: 12pt;
+  color: #888888;
+  margin: 0;
+  width: 100%;
+  max-width: 1000px;
+  text-align: left;
 `;
