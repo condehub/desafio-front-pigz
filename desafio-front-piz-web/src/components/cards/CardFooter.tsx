@@ -17,6 +17,7 @@ const Text = styled.h2`
     font-weight: bold;
     width: 400px;
     margin-bottom: 40px;
+    text-align: center;
 `
 
 const SubtitlesFooter = styled.p`
@@ -24,6 +25,7 @@ const SubtitlesFooter = styled.p`
     width: 320px;
     font-size: 16pt;
     font-weight: 500;
+    text-align: center;
 `
 export function CardFooter() {
   return (

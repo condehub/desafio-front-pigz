@@ -362,7 +362,7 @@ export const Title = styled.h2`
   font-weight: bold;
   color: black;
 `
-export const GridContainer= styled.div`
+export const GridContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -383,6 +383,7 @@ export const CardWrapper = styled.div`
   padding: 40px 40px;
   border: 1px solid transparent;
   transition: border 0.15s;
+  text-align: center;
 
   &:hover {
     border: 3px solid #E0E0E0;
@@ -424,9 +425,8 @@ export const TrailContainer = styled.div`
 export const ConteudoContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center; /* Garante que o card fique bem no meio da tela */
+  justify-content: center;
   
-  /* O "respiro" (espaço) perfeito entre a trilha de linhas e o card laranja */
   padding-top: 40px; 
   padding-bottom: 40px;
 `;
@@ -498,7 +498,7 @@ export const PricingSectionHeader = styled.div`
 `;
 
 export const PricingSectionTitle = styled.h2`
-  font-size: 30pt;
+  font-size: 32pt;
   font-weight: 700;
   color: #1a1a1a;
   line-height: 1.2;
@@ -510,8 +510,8 @@ export const PricingSectionTitle = styled.h2`
 `;
 
 export const PricingSectionDescription = styled.p`
-  font-size: 14pt;
-  color: #666666;
+  font-size: 16pt;
+  color: black;
   line-height: 1.6;
   margin: 0;
 `;
@@ -525,12 +525,11 @@ export const PricingSection = styled.section`
 `;
 
 export const PricingCardBox = styled.div`
-  background-color: #F4F4F4;
+  background-color: #fafafa;
   border-radius: 32px;
   padding: 36px 32px 32px;
   width: 100%;
-  max-width: 420px;
-  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -540,6 +539,7 @@ export const PricingHeader = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4px;
+  text-align: left;
 `;
 
 export const PricingTitle = styled.h2`
@@ -557,6 +557,7 @@ export const PricingSubtitle = styled.p`
 
 export const PricingFeatureList = styled.ul`
   list-style: none;
+  text-align: left;
   padding: 0;
   margin: 0;
   display: flex;
@@ -566,20 +567,20 @@ export const PricingFeatureList = styled.ul`
 
 export const PricingFeatureItem = styled.li`
   font-size: 13pt;
-  color: #444444;
+  color: black;
   padding-left: 0;
 `;
 
 export const PricingPriceBadge = styled.div`
   background-color: #ffffff;
-  border-radius: 16px;
+  border-radius: 50px;
   padding: 16px 24px;
   display: inline-flex;
   align-self: flex-start;
 `;
 
 export const PricingPrice = styled.p`
-  font-size: 20pt;
+  font-size: 15pt;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0;
@@ -592,7 +593,6 @@ export const PricingCTA = styled.button`
   border-radius: 9999px;
   padding: 18px 24px;
   font-size: 15pt;
-  font-weight: 600;
   cursor: pointer;
   box-shadow: 0px 6px 20px rgba(250, 100, 30, 0.35);
   transition: all 0.2s ease-in-out;
