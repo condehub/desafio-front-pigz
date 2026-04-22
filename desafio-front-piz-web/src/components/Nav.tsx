@@ -4,7 +4,18 @@ import hamburguerFoto from '../assets/hamburger-with-floating-ingredients.png';
 import * as S from './styles.ts'
 import { Form } from './form/Form.tsx';
 
-// --- COMPONENTE PRINCIPAL ---
+/**
+ * Nav
+ * ----
+ * Seção hero principal da landing page, renderizada logo abaixo do Header fixo.
+ *
+ * Layout:
+ * - Fundo laranja (#FA641E) com overflow hidden para cortar a imagem à direita.
+ * - TopSection: título à esquerda + imagem do hambúrguer cortada à direita.
+ * - Parágrafo descritivo abaixo do TopSection.
+ *
+ * Estilos: Texto · Container · TopSection · FirstText · Hamburguer · Paragrafo (styles.ts)
+ */
 
 function Nav() {
   return (

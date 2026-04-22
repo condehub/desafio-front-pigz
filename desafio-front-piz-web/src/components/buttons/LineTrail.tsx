@@ -7,6 +7,25 @@ import imgDelivery from '../../assets/delivery-gestao.png'
 import imgPayment from '../../assets/payment-card.png'
 import * as S from '../styles'
 
+/**
+ * LineTrail
+ * ----------
+ * Carrossel de funcionalidades com troca automática a cada 10 segundos.
+ *
+ * Abas disponíveis (ORDEM_DAS_ABAS):
+ * 1. pigz-marketplace  → Pigz Marketplace
+ * 2. pigz-gestao       → Pigz Gestão
+ * 3. delivery-gestao   → Gestão de entregadores
+ * 4. online-payment    → Pagamento on-line
+ *
+ * Comportamento:
+ * - useEffect cria um intervalo de 10s que avança para a próxima aba automaticamente.
+ * - O usuário pode clicar em qualquer LineButton para trocar a aba manualmente.
+ *
+ * Estilos: TrailContainer · ConteudoContainer (styles.ts)
+ * Filhos:  LineButton · FeatureCard
+ */
+
 const ORDEM_DAS_ABAS = [
   'pigz-marketplace', // 0: Primeira parada
   'pigz-gestao',      // 1: Segunda parada

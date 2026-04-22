@@ -5,10 +5,20 @@ import phoneLogo from '../../assets/smartphone-logo.svg'
 import pigzGestao from '../../assets/pigzgestao-logo.svg'
 import printerLogo from '../../assets/printer-logo.svg'
 
-
-// Styled Components
-
-
+/**
+ * CardContainer
+ * --------------
+ * Exibe a grade de cards de serviços do Pigz (Marketplace, App, Gestão, Impressão).
+ *
+ * Cada card contém:
+ * - Ícone SVG representando o serviço.
+ * - Título do serviço (Title).
+ * - Subtítulo descritivo (Subtitles).
+ *
+ * Os dados dos cards são mantidos em estado local (useState) como array estático.
+ *
+ * Estilos: GridContainer · CardWrapper · LogoImage · Title · Subtitles (styles.ts)
+ */
 
 function CardContainer() {
   const [cards] = useState([{
@@ -35,18 +45,15 @@ function CardContainer() {
     ]);
 
     return (
-      <div className="card-container">
+      <S.GridContainer>
         {cards.map((card) => (
-          <S.GridContainer>
-            <S.CardWrapper key={card.id} className="card">
-              <S.LogoImage src={card.icon} className={card.title} />
-              <S.Title>{card.title}</S.Title>
-              <S.Subtitles>{card.subtitle}</S.Subtitles>
-            </S.CardWrapper>
-          </S.GridContainer>
-          
+          <S.CardWrapper key={card.id} className="card">
+            <S.LogoImage src={card.icon} className={card.title} />
+            <S.Title>{card.title}</S.Title>
+            <S.Subtitles>{card.subtitle}</S.Subtitles>
+          </S.CardWrapper>
         ))}
-      </div>
+      </S.GridContainer>
     );
 }
 

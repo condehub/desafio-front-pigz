@@ -1,26 +1,56 @@
 import * as S from '../styles';
 import whatsappIcon from '../../assets/whatsapp-icon.png';
 
+/**
+ * PricingCard
+ * ------------
+ * Card reutilizável de plano/preço. Suporta modo de destaque (isHighlighted).
+ *
+ * Props:
+ * - title: string           — nome do plano (ex.: "Pigz").
+ * - subtitle: string        — tagline do plano.
+ * - features: string[]      — lista de funcionalidades inclusas.
+ * - price: string           — valor do plano (ex.: "R$199/mês").
+ * - ctaLabel: string        — texto do botão de ação.
+ * - isHighlighted?: boolean — quando true, inverte cores (fundo laranja, textos e botão branco).
+ * - onCtaClick?: () => void — callback opcional ao clicar no botão.
+ *
+ * Estilos: PricingCardBox · PricingHeader · PricingTitle · PricingSubtitle ·
+ *          PricingFeatureList · PricingFeatureItem · PricingPriceBadge ·
+ *          PricingPrice · PricingCTA (styles.ts)
+ *
+ * ---
+ *
+ * PricingSection
+ * ---------------
+ * Seção completa de planos. Renderiza dois PricingCards lado a lado (desktop)
+ * ou empilhados (mobile), seguidos de um bloco de contato via WhatsApp.
+ *
+ * Estilos: PricingWrapper · PricingSectionHeader · PricingSectionTitle ·
+ *          PricingSectionDescription · PricingSection · ContactWrapper ·
+ *          ContactText · ContactPhoneWrapper · ContactIcon · ContactPhoneNumber (styles.ts)
+ */
 interface PricingCardProps {
   title: string;
   subtitle: string;
   features: string[];
   price: string;
   ctaLabel: string;
+  isHighlighted?: boolean;
   onCtaClick?: () => void;
 }
 
-export function PricingCard({ title, subtitle, features, price, ctaLabel, onCtaClick }: PricingCardProps) {
+export function PricingCard({ title, subtitle, features, price, ctaLabel, isHighlighted, onCtaClick }: PricingCardProps) {
   return (
-    <S.PricingCardBox>
+    <S.PricingCardBox $isHighlighted={isHighlighted}>
       <S.PricingHeader>
-        <S.PricingTitle>{title}</S.PricingTitle>
-        <S.PricingSubtitle>{subtitle}</S.PricingSubtitle>
+        <S.PricingTitle $isHighlighted={isHighlighted}>{title}</S.PricingTitle>
+        <S.PricingSubtitle $isHighlighted={isHighlighted}>{subtitle}</S.PricingSubtitle>
       </S.PricingHeader>
 
       <S.PricingFeatureList>
         {features.map((feature) => (
-          <S.PricingFeatureItem key={feature}>{feature}</S.PricingFeatureItem>
+          <S.PricingFeatureItem $isHighlighted={isHighlighted} key={feature}>{feature}</S.PricingFeatureItem>
         ))}
       </S.PricingFeatureList>
 
@@ -28,7 +58,7 @@ export function PricingCard({ title, subtitle, features, price, ctaLabel, onCtaC
         <S.PricingPrice>{price}</S.PricingPrice>
       </S.PricingPriceBadge>
 
-      <S.PricingCTA onClick={onCtaClick}>{ctaLabel}</S.PricingCTA>
+      <S.PricingCTA $isHighlighted={isHighlighted} onClick={onCtaClick}>{ctaLabel}</S.PricingCTA>
     </S.PricingCardBox>
   );
 }

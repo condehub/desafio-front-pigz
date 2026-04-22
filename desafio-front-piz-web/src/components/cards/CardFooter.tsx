@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+/**
+ * CardFooter
+ * -----------
+ * Bloco de texto promocional exibido abaixo dos cards de serviço.
+ *
+ * Conteúdo:
+ * - Título: "Tudo que você precisa por apenas R$199/mês".
+ * - Subtítulo: descrição sem taxas ocultas.
+ *
+ * Estilos: TextDiv · Text · SubtitlesFooter (definidos localmente neste arquivo)
+ */
 
 const TextDiv = styled.div`
   margin-top: 30px;
