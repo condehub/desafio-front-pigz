@@ -24,7 +24,7 @@ export const PartnerButton = styled.button`
   border-radius: 9999px;
   padding: 12px 24px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 16pt;
   cursor: pointer;
   box-shadow: 0px 4px 14px rgba(250, 100, 30, 0.35);
   transition: all 0.2s ease-in-out;
@@ -44,7 +44,7 @@ export const PartnerButton = styled.button`
   /* 3. Responsividade aninhada */
   @media (max-width: 768px) {
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 14pt;
   }
 `;
 
@@ -102,7 +102,7 @@ export const FirstText = styled.h2`
 `;
 
 export const Hamburguer = styled.img`
-  max-width: 60%; /* Ajuste o tamanho da imagem conforme necessário */
+  max-width: 60%;
   height: auto;
   object-fit: contain;
 
@@ -138,7 +138,7 @@ export const FormCard = styled.section`
   margin: 80px 0;
   background-color: #FFFFFF;
   width: 100%;
-  max-width: 380px; /* Largura ideal para esse tipo de card */
+  max-width: 600px; /* Largura ideal para esse tipo de card */
   border-radius: 30px; /* Bordas bem arredondadas como na imagem */
   padding: 32px;
   /* Uma sombra suave opcional para destacar do fundo */
@@ -155,7 +155,7 @@ export const TituloForm = styled.h2`
   margin-bottom: 4px;
   text-align: left;
   color: #333333;
-  font-size: 24px;
+  font-size: 24pt;
   margin: 0 0 8px 0;
   font-weight: 700;
 `;
@@ -163,7 +163,7 @@ export const TituloForm = styled.h2`
 export const Subtitulo = styled.p`
   margin-bottom: 4px;
   text-align: left;
-  font-size: 13px;
+  font-size: 14pt;
   color: #666666;
   margin: 0 0 24px 0;
 `;
@@ -183,7 +183,7 @@ export const InputRow = styled.div`
 
 export const Label = styled.label`
   text-align: left;
-  font-size: 14px;
+  font-size: 14pt;
   font-weight: 600;
   color: #333333;
   margin-bottom: 6px;
@@ -196,7 +196,7 @@ export const StyledInput = styled.input`
   border: 1px solid #CCCCCC;
   border-radius: 12px;
   padding: 14px;
-  font-size: 14px;
+  font-size: 14pt;
   outline: none;
   margin-bottom: 12px;
   width: 100%;
@@ -230,7 +230,7 @@ export const PhonePrefix = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
+  font-size: 14pt;
   color: #888888;
   border-right: 1px solid #CCCCCC; /* Linha divisória */
 `;
@@ -240,7 +240,7 @@ export const PhoneInput = styled.input`
   background-color: white;
   border: none;
   padding: 14px;
-  font-size: 14px;
+  font-size: 14pt;
   flex: 1; /* Ocupa o restante do espaço */
   outline: none;
 
@@ -251,7 +251,7 @@ export const PhoneInput = styled.input`
 /* -------------------------------------- */
 
 export const AvisoLegal = styled.p`
-  font-size: 11px;
+  font-size: 11pt;
   color: #666666;
   line-height: 1.5;
   margin: 16px 0 24px 0;
@@ -263,7 +263,7 @@ export const BotaoContinuar = styled.button`
   border: none;
   border-radius: 16px;
   padding: 16px;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -282,7 +282,7 @@ export const StyledSelect = styled.select`
   
   /* Aumentamos o padding da direita para 40px, para o texto não encostar na seta */
   padding: 14px 40px 14px 14px; 
-  font-size: 14px;
+  font-size: 14pt;
   outline: none;
   width: 100%;
   cursor: pointer;
@@ -334,8 +334,8 @@ export const PigzTexto = styled.h1`
   line-height: 1.2;
   font-weight: bold;
   letter-spacing: 0.6px;
-  max-width: 300px;
-  font-size: 36px;
+  max-width: 400px;
+  font-size: 36pt;
   
 `;
 
@@ -346,7 +346,7 @@ export const LogoImage = styled.img`
 `
 
 export const Title = styled.h2`
-  font-weight: ;
+  font-weight: bold;
   color: black;
 `
 export const GridContainer= styled.div`
@@ -427,7 +427,7 @@ export const FeatureContainer = styled.div`
 `;
 
 export const FeatureTitle = styled.h2`
-  font-size: 32px;
+  font-size: 32pt;
   font-weight: 700;
   color: #333333;
   margin-bottom: 24px;
@@ -436,7 +436,7 @@ export const FeatureTitle = styled.h2`
 export const OrangeCard = styled.div`
   background-color: #FA641E; // O Laranja da Pigz
   border-radius: 40px;
-  width: 100%;
+  width: 90%;
   max-width: 600px; /* Limita o crescimento em telas gigantes */
   
   padding: 40px 40px 0 40px; 
@@ -457,6 +457,6 @@ export const FeatureDescription = styled.p`
 
 export const FeatureImage = styled.img`
   width: 100%;
-  max-width: 400px; /* Ajuste conforme o tamanho real da sua imagem */
-  display: block; /* Remove o espaço fantasma que o HTML coloca embaixo de imagens */
+  max-width: 400px;
+  display: block;
 `;
