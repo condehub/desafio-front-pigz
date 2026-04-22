@@ -356,12 +356,15 @@ export const GridContainer= styled.div`
   padding: 20px;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  
+
+  
 `;
 
 export const CardWrapper = styled.div`
-  width: 250px;
-  height: 225px;
+  width: 100%;
+  height: 100%;
   background-color: #FAFAFA;
   border-radius: 20%;
   padding: 40px 40px;
@@ -377,7 +380,7 @@ export const CardWrapper = styled.div`
 export const Subtitles = styled.p` 
   color: black;
 `
-
+// Line Section Styles
 
 interface StyledLineProps {
   $isActive: boolean; // Avisamos que $isActive existe e é do tipo verdadeiro/falso
