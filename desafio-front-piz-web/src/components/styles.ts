@@ -608,3 +608,37 @@ export const PricingCTA = styled.button`
     box-shadow: 0px 4px 12px rgba(250, 100, 30, 0.3);
   }
 `;
+
+export const ContactWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 12px;
+  }
+`;
+
+export const ContactText = styled.span`
+  font-size: 16pt;
+  color: black;
+`;
+
+export const ContactPhoneWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
+
+export const ContactIcon = styled.img`
+  width: 28px;
+  height: 28px;
+`;
+
+export const ContactPhoneNumber = styled.span`
+  font-size: 16pt;
+  color: black;
+`;
