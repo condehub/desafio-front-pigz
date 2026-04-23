@@ -55,10 +55,10 @@ export function Footer() {
             <S.FooterColumnTitle>Pigz nas redes</S.FooterColumnTitle>
             <S.FooterSocialList>
               {/* Ícones linkedin, instagram, facebook e youtube */}
-              <S.FooterSocialIcon src={logoLinkedin} alt="LinkedIn" />
-              <S.FooterSocialIcon src={logoInstagram} alt="Instagram" />
-              <S.FooterSocialIcon src={logoFacebook} alt="Facebook" />
-              <S.FooterSocialIcon src={logoYoutube} alt="YouTube" />
+              <a target='_blank' href="https://www.linkedin.com/company/pigz?originalSubdomain=br"><S.FooterSocialIcon src={logoLinkedin} alt="LinkedIn" /></a>
+              <a target='_blank' href="https://www.instagram.com/pigzapp/"><S.FooterSocialIcon src={logoInstagram} alt="Instagram" /></a>
+              <a target='_blank' href="https://www.facebook.com/pigzapp/?locale=pt_BR"><S.FooterSocialIcon src={logoFacebook} alt="Facebook" /></a>
+              <a target='_blank' href="https://www.youtube.com/channel/UCzcyfplxkv_KmCHeRqNMTPw"><S.FooterSocialIcon src={logoYoutube} alt="YouTube" /></a>
             </S.FooterSocialList>
           </S.FooterColumn>
 

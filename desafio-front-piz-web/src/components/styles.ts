@@ -15,7 +15,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
   background-color: #ffffff;
   padding: 16px 0;
-  position: fixed;
+  position: absolute;
 `;
 
 export const HeaderContent = styled.div`
@@ -69,69 +69,78 @@ export const Logo = styled.img`
   }
 `;
 
-// --- ESTILOS PRINCIPAIS ---
-
-export const Texto = styled.section`
+// 1. O Fundo Laranja (Ocupa 100% da tela)
+export const SectionLaranja = styled.section`
   margin-top: 80px;
   background-color: #FA641E;
-  color: #FFFFFF;
-  padding: 32px 0 32px 32px;
   width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
+  overflow: hidden; /* Essencial: esconde o pedaço do hambúrguer que vazar da tela */
 `;
 
-export const Container = styled.div`
-  width: 100%;
+// 2. A Trava de Crescimento (Segura o layout no meio em telas gigantes)
+export const ContainerCentral = styled.div`
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 80px 32px; 
+  
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-`;
-
-export const TopSection = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
-
-export const FirstText = styled.h2`
-  font-size: 40pt;
-  font-weight: bold;
-  margin: 0;
-  line-height: 1.1;
-  text-align: left;
-  flex: 1;
-  min-width: 0;
-
+  align-items: center; 
+  justify-content: space-between; 
+  position: relative; 
   @media (max-width: 768px) {
-    font-size: 26pt;
+    padding: 60px 16px; 
   }
 `;
 
-export const Hamburguer = styled.img`
-  flex-shrink: 0;
-  width: 40%;
-  height: auto;
-  object-fit: contain;
-  margin-right: -70px;
-  align-self: center;
+// 3. A Caixa de Textos
+export const GrupoTexto = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Espaço perfeito entre o título e o parágrafo */
+  max-width: 50%; /* Impede que o texto invada o espaço da imagem no PC */
+  z-index: 2; /* Garante que o texto fique legível por cima de tudo */
 
   @media (max-width: 768px) {
-    width: 46%;
-    margin-right: -50px;
+    max-width: 65%; /* No celular, damos mais espaço horizontal para o texto */
+  }
+`;
+
+export const Titulo = styled.h2`
+  font-size: 48px; /* Ajustado para um tamanho mais padrão (px costuma ser mais fácil de prever que pt em web) */
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
   }
 `;
 
 export const Paragrafo = styled.p`
-  font-size: 14pt;
+  font-size: 18px;
+  color: #FFFFFF;
   line-height: 1.5;
   margin: 0;
-  max-width: 58%;
-  text-align: center;
 
   @media (max-width: 768px) {
-    font-size: 12pt;
-    max-width: 62%;
+    font-size: 14px;
+  }
+`;
+
+export const Hamburguer = styled.img`
+  width: 300px;
+  object-fit: contain;
+  margin-right: -60px;
+
+
+  @media (max-width: 768px) {
+    position: absolute;
+    right: -80px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 280px; 
+    z-index: 2;
   }
 `;
 
@@ -231,7 +240,7 @@ export const StyledInput = styled.input`
   }
 `;
 
-/* --- ESTILOS ESPECÍFICOS DO TELEFONE --- */
+// ESTILOS ESPECÍFICOS DO TELEFONE
 export const PhoneContainer = styled.div`
   color: black;
   display: flex;
@@ -268,7 +277,7 @@ export const PhoneInput = styled.input`
     color: #BBBBBB;
   }
 `;
-/* -------------------------------------- */
+
 
 export const AvisoLegal = styled.p`
   font-size: 11pt;
@@ -293,21 +302,17 @@ export const BotaoContinuar = styled.button`
   }
 `;
 
-// Adicione isso no seu styles.ts
 export const StyledSelect = styled.select`
   color: black;
   background-color: white;
   border: 1px solid #CCCCCC;
   border-radius: 12px;
   
-  /* Aumentamos o padding da direita para 40px, para o texto não encostar na seta */
   padding: 14px 40px 14px 14px; 
   font-size: 14pt;
   outline: none;
   width: 100%;
   cursor: pointer;
-
-  /* --- O TRUQUE DA SETINHA --- */
   
   /* 1. Remove a seta nativa do navegador */
   appearance: none;
@@ -447,10 +452,11 @@ export const Subtitles = styled.p`
     font-size: 11pt;
   }
 `;
+
 // Line Section Styles
 
 interface StyledLineProps {
-  $isActive: boolean; // Avisamos que $isActive existe e é do tipo verdadeiro/falso
+  $isActive: boolean; 
 }
 
 export const StyledLine = styled.div<StyledLineProps>`
