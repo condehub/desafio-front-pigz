@@ -1,16 +1,73 @@
-## desafio-front-pigz
-Desafio para a vaga de desenvolvedor front-end na Pigz. 
+# React + TypeScript + Vite
 
-## Regras básicas
-1. Você deverá subir este desafio em um repositório público no seu github pessoal.
-2. Caso não consiga concluir todos os passos, não se preocupe, nos envie mesmo assim o que você fez para que possamos avaliar.
-3. O projeto deverá ser criado preferencialmente utilizando React JS;
-4. Seu foco deverá ser criar a página para dispositivos móveis, será para este tipo de dispositivo que o resultado será avaliado.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## O Desafio
-Seu desafio será criar a landpage do Pigz para clientes, neste momento você não precisará se preocupar com API e de onde os dados que são exibidos serão buscados, nosso foco será a criação dos componentes com o máximo possível de fidelidade ao que está sendo solicitado pelo time de UI.
+Currently, two official plugins are available:
 
-No link https://xd.adobe.com/view/ff23f156-a96e-4cf3-a0fb-bc2646c1945a-aa70/specs/ você conseguirá encontrar todo o material necessário para criar a página, incluindo cores, imagens e outros itens. Basta você clicar no componente e no lado esquerdo serão exibidos os detalhes dele (download, cores, textos).
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
+## React Compiler
 
-Pronto! Agora é mãos à obra!
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
