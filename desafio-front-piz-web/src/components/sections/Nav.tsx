@@ -1,5 +1,5 @@
-import imgHamburguer from '../assets/hamburger-with-floating-ingredients.png';
-import * as S from './styles.ts'
+import imgHamburguer from '../../assets/hamburger-with-floating-ingredients.png';
+import * as S from '../styles/styles.ts'
 
 function Nav() {
   return (

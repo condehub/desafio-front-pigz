@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import * as S from '../styles'
+import * as S from '../styles/styles'
 import marketplaceLogo from '../../assets/marketplace-icon.svg'
 import phoneLogo from '../../assets/smartphone-logo.svg'
 import pigzGestao from '../../assets/pigzgestao-logo.svg'

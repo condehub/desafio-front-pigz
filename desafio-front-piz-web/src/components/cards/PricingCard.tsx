@@ -1,4 +1,4 @@
-import * as S from '../styles';
+import * as S from '../styles/styles';
 import whatsappIcon from '../../assets/whatsapp-icon.png';
 
 /**

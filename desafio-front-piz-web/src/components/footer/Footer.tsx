@@ -1,4 +1,4 @@
-import * as S from '../styles';
+import * as S from '../styles/styles';
 import pigzCinza from '../../assets/pigz-cinza.png';
 import seloAppStore from '../../assets/selo-app-store.png';
 import seloGooglePlay from '../../assets/selo-google-play.png';

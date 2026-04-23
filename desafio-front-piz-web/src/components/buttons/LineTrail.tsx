@@ -5,7 +5,7 @@ import imgSmartphones from '../../assets/smartphones-img.png'
 import imgNotebook from '../../assets/notebook-smartphone.png'
 import imgDelivery from '../../assets/delivery-gestao.png'
 import imgPayment from '../../assets/payment-card.png'
-import * as S from '../styles'
+import * as S from '../styles/styles'
 
 /**
  * LineTrail

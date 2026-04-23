@@ -1,4 +1,4 @@
-import * as S from '../styles.ts'
+import * as S from '../styles/styles.ts'
 
 /**
  * LineButton
@@ -21,4 +21,4 @@ export function LineButton({ isActive, onClick }: LineButtonProps) {
       <S.StyledLine $isActive={isActive} onClick={onClick} />
     </>
   )
-}
+}
