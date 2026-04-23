@@ -72,11 +72,10 @@ export const Logo = styled.img`
 // --- ESTILOS PRINCIPAIS ---
 
 export const Texto = styled.section`
-
   margin-top: 80px;
   background-color: #FA641E;
   color: #FFFFFF;
-  padding: 40px 0 40px 40px;
+  padding: 32px 0 32px 32px;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
@@ -86,60 +85,53 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 16px;
 `;
 
 export const TopSection = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  gap: 0;
-
-  @media (max-width: 768px) {
-    flex-direction: row;
-    align-items: center;
-  }
 `;
 
 export const FirstText = styled.h2`
   font-size: 40pt;
   font-weight: bold;
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.1;
+  text-align: left;
   flex: 1;
   min-width: 0;
-  padding-right: 2px;
-  text-align: center;
 
   @media (max-width: 768px) {
-    font-size: 24pt;
+    font-size: 26pt;
   }
 `;
 
 export const Hamburguer = styled.img`
-  max-width: 20%;
   flex-shrink: 0;
+  width: 40%;
   height: auto;
-  object-fit: cover;
-  object-position: center;
-  margin-right: -94px;
+  object-fit: contain;
+  margin-right: -70px;
+  align-self: center;
 
   @media (max-width: 768px) {
-    max-width: 45%;
+    width: 46%;
     margin-right: -50px;
   }
 `;
 
 export const Paragrafo = styled.p`
-  font-size: 16pt;
+  font-size: 14pt;
   line-height: 1.5;
   margin: 0;
-  padding-right: 40px;
+  max-width: 58%;
   text-align: center;
 
   @media (max-width: 768px) {
-    font-size: 13pt;
-    padding-right: 24px;
-    text-align: left;
+    font-size: 12pt;
+    max-width: 62%;
   }
 `;
 
@@ -391,8 +383,8 @@ export const PigzTexto = styled.h1`
 // Styles dos cards
 
 export const LogoImage = styled.img`
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   margin-bottom: 8px;
 `
@@ -420,14 +412,14 @@ export const GridContainer = styled.div`
 export const CardWrapper = styled.div`
   flex: 1;
   min-width: 140px;
-  max-width: 246px; /* Limita a largura máxima do card */
-  height: auto;
+  max-width: 240px; /* Limita a largura máxima do card */
   background-color: #FAFAFA;
   border-radius: 16px;
   padding: 32px 12px;
   border: 1px solid transparent;
   transition: border 0.15s;
   text-align: center;
+  cursor: pointer;
 
   /* Tablet: 2 cards por linha */
   @media (max-width: 1024px) {
@@ -755,6 +747,7 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   border-top: 1px solid #EEEEEE;
+  text-align: left;
 `;
 
 export const FooterContent = styled.div`
@@ -836,17 +829,11 @@ export const FooterSocialList = styled.div`
   align-items: center;
 `;
 
-export const FooterSocialIcon = styled.div`
+export const FooterSocialIcon = styled.img`
   width: 32px;
   height: 32px;
-  background-color: #EEEEEE;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: contain;
   cursor: pointer;
-  font-size: 12px; /* Placeholder text size */
-  color: #333;
   transition: transform 0.2s;
 
   &:hover {
@@ -935,8 +922,8 @@ export const FooterCopyright = styled.div`
   color: #888888;
 `;
 
-export const OrangeLabsIcon = styled.div`
-  font-weight: bold;
-  color: #FA641E;
-  font-size: 12pt;
+export const OrangeLabsIcon = styled.img`
+  height: 32px;
+  width: auto;
+  object-fit: contain;
 `;

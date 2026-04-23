@@ -2,11 +2,12 @@ import * as S from '../styles';
 import pigzCinza from '../../assets/pigz-cinza.png';
 import seloAppStore from '../../assets/selo-app-store.png';
 import seloGooglePlay from '../../assets/selo-google-play.png';
+import logoLinkedin from '../../assets/logo-linkedin.png';
+import logoInstagram from '../../assets/logo-instagram.png';
+import logoFacebook from '../../assets/logo-facebook.png';
+import logoYoutube from '../../assets/logo-youtube.png';
+import logoOrangeLabs from '../../assets/logo-orange-labs.png';
 
-// Placeholders para ícones que você deve adicionar posteriormente
-const PlaceholderIcon = ({ name }: { name: string }) => (
-  <S.FooterSocialIcon title={name}>{name[0]}</S.FooterSocialIcon>
-);
 
 /**
  * Footer
@@ -41,12 +42,10 @@ export function Footer() {
             <S.FooterColumnTitle>Fale Conosco</S.FooterColumnTitle>
             <S.FooterLinkList>
               <S.FooterContactItem>
-                {/* Ícone fale conosco placeholder */}
-                <span>💬</span> falecom@pigz.com.br
+                falecom@pigz.com.br
               </S.FooterContactItem>
               <S.FooterContactItem>
-                {/* Ícone telefone placeholder */}
-                <span>📞</span> (95) 3224-2603
+                (95) 3224-2603
               </S.FooterContactItem>
             </S.FooterLinkList>
           </S.FooterColumn>
@@ -56,10 +55,10 @@ export function Footer() {
             <S.FooterColumnTitle>Pigz nas redes</S.FooterColumnTitle>
             <S.FooterSocialList>
               {/* Ícones linkedin, instagram, facebook e youtube */}
-              <PlaceholderIcon name="LinkedIn" />
-              <PlaceholderIcon name="Instagram" />
-              <PlaceholderIcon name="Facebook" />
-              <PlaceholderIcon name="YouTube" />
+              <S.FooterSocialIcon src={logoLinkedin} alt="LinkedIn" />
+              <S.FooterSocialIcon src={logoInstagram} alt="Instagram" />
+              <S.FooterSocialIcon src={logoFacebook} alt="Facebook" />
+              <S.FooterSocialIcon src={logoYoutube} alt="YouTube" />
             </S.FooterSocialList>
           </S.FooterColumn>
 
@@ -94,8 +93,7 @@ export function Footer() {
           Pigz © Todos os direitos reservados.
         </S.FooterCopyright>
 
-        {/* Placeholder para ícone orange labs */}
-        <S.OrangeLabsIcon>Orange Labs</S.OrangeLabsIcon>
+        <S.OrangeLabsIcon src={logoOrangeLabs} alt="Orange Labs" />
       </S.FooterBottom>
     </S.FooterContainer>
   );
