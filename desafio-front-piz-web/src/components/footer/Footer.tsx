@@ -7,7 +7,7 @@ import logoInstagram from '../../assets/logo-instagram.png';
 import logoFacebook from '../../assets/logo-facebook.png';
 import logoYoutube from '../../assets/logo-youtube.png';
 import logoOrangeLabs from '../../assets/logo-orange-labs.png';
-
+import faleConosco from '../../assets/icone-fale-conosco.png'
 
 /**
  * Footer
@@ -39,14 +39,15 @@ export function Footer() {
 
           {/* Column 2: Fale Conosco */}
           <S.FooterColumn>
-            <S.FooterColumnTitle>Fale Conosco</S.FooterColumnTitle>
+            <S.FooterColumnTitle><S.FaleConoscoIcon src={faleConosco} />Fale Conosco</S.FooterColumnTitle>
             <S.FooterLinkList>
               <S.FooterContactItem>
                 falecom@pigz.com.br
-              </S.FooterContactItem>
-              <S.FooterContactItem>
+              </S.FooterContactItem >
+
+                <S.FooterContactItem target='_blank' href='https://wa.me/+559531983939'>
                 (95) 3224-2603
-              </S.FooterContactItem>
+                </S.FooterContactItem>
             </S.FooterLinkList>
           </S.FooterColumn>
 

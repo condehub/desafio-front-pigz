@@ -109,10 +109,14 @@ export function PricingSection() {
 
       <S.ContactWrapper>
         <S.ContactText>Fale com a Pigz</S.ContactText>
-        <S.ContactPhoneWrapper>
-          <S.ContactIcon src={whatsappIcon} alt="WhatsApp icone" />
-          <S.ContactPhoneNumber>95 3224-2603</S.ContactPhoneNumber>
-        </S.ContactPhoneWrapper>
+        
+          <S.ContactPhoneAnchor target='_blank' href='https://wa.me/+559531983939'>
+            <S.ContactPhoneWrapper>
+              <S.ContactIcon src={whatsappIcon} alt="WhatsApp icone" />
+              <S.ContactPhoneNumber>95 3224-2603</S.ContactPhoneNumber>
+              </S.ContactPhoneWrapper>
+            </S.ContactPhoneAnchor>
+        
       </S.ContactWrapper>
     </S.PricingWrapper>
   );

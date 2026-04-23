@@ -541,7 +541,7 @@ export const OrangeCard = styled.div`
 export const FeatureDescription = styled.p`
   color: white;
   text-align: center;
-  font-size: 14pt;
+  font-size: 15pt;
   line-height: 1.5;
   margin-bottom: 0;
   width: 100%;
@@ -734,6 +734,12 @@ export const ContactPhoneWrapper = styled.div`
   gap: 8px;
 `;
 
+export const ContactPhoneAnchor = styled.a`
+  text-decoration: none;
+  display: flex;
+
+`
+
 export const ContactIcon = styled.img`
   width: 28px;
   height: 28px;
@@ -821,12 +827,13 @@ export const FooterLink = styled.a`
   }
 `;
 
-export const FooterContactItem = styled.div`
+export const FooterContactItem = styled.a`
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 14pt;
   color: #666666;
+  text-decoration: none;
 `;
 
 export const FooterSocialList = styled.div`
@@ -845,6 +852,13 @@ export const FooterSocialIcon = styled.img`
   &:hover {
     transform: scale(1.1);
   }
+`;
+
+export const FaleConoscoIcon = styled.img`
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 5.5px;
 `;
 
 export const FooterAppSection = styled.div`
