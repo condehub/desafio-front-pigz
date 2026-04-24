@@ -25,8 +25,12 @@ src/
     │   ├── CardFooter.tsx          → Texto de rodapé da seção de cards
     │   ├── FeatureCard.tsx         → Card laranja de detalhe de feature
     │   └── PricingCard.tsx         → Cards de planos e preços
+    ├── footer/
+    │   └── Footer.tsx              → Rodapé da aplicação
     └── sections/
-        └── CardsSection.tsx        → Seção que agrupa imagem, texto e cards
+        ├── CardsSection.tsx        → Seção que agrupa imagem, texto e cards
+        ├── TextPigz.tsx            → Texto do banner inicial
+        └── ServicesSection.tsx     → Seção de serviços (vazio)
 ```
 
 ---
@@ -47,4 +51,7 @@ src/
 | [10 — LineTrail](./10_linetrail.md) | Trilha animada com `useState` + `useEffect` |
 | [11 — FeatureCard](./11_featurecard.md) | Card de detalhe laranja |
 | [12 — PricingCard](./12_pricingcard.md) | Cards de preços e planos |
+| [13 — Footer](./13_footer.md) | Rodapé completo da página |
+| [14 — TextPigz](./14_textpigz.md) | Texto principal do banner |
+| [15 — ServicesSection](./15_servicessection.md) | Seção de serviços prestados |
 
