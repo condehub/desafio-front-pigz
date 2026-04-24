@@ -22,6 +22,7 @@ createRoot(document.getElementById('root')!).render(
     <Section1 />
     <LineTrail />
     <PricingSection />
+    <Footer />
   </StrictMode>
 )
 ```
