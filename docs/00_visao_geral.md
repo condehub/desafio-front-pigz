@@ -47,4 +47,4 @@ src/
 | [10 — LineTrail](./10_linetrail.md) | Trilha animada com `useState` + `useEffect` |
 | [11 — FeatureCard](./11_featurecard.md) | Card de detalhe laranja |
 | [12 — PricingCard](./12_pricingcard.md) | Cards de preços e planos |
-| [13 -- Footer ]
+
