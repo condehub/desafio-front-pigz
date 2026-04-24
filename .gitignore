@@ -25,5 +25,8 @@ dist-ssr
 
 .node_modules/
 
+# Ignore SDLC context
+sdlc/
+
 # Ignore test plan markdown
 plano_de_testes_pigz.md
