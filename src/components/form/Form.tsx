@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import * as S from "../styles/styles.ts";
 
 export function Form() {

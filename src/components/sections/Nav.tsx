@@ -15,7 +15,7 @@ function Nav() {
     </S.GrupoTexto>
 
     {/* COLUNA DIREITA: Apenas a imagem */}
-    <S.Hamburguer src={imgHamburguer} alt="Hambúrguer flutuando com ingredientes soltos" />
+    <S.Hamburguer src={imgHamburguer} alt="Hambúrguer flutuando com ingredientes soltos" data-testid='container-hamburguer' loading='lazy'/>
 
   </S.ContainerCentral>
 </S.SectionLaranja>
