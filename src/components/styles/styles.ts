@@ -106,7 +106,7 @@ export const GrupoTexto = styled.div`
 `;
 
 export const Titulo = styled.h2`
-  font-size: 48px; /* Ajustado para um tamanho mais padrão (px costuma ser mais fácil de prever que pt em web) */
+  font-size: 54px; /* Ajustado para um tamanho mais padrão (px costuma ser mais fácil de prever que pt em web) */
   font-weight: 700;
   color: #FFFFFF;
   line-height: 1.1;
@@ -118,7 +118,7 @@ export const Titulo = styled.h2`
 `;
 
 export const Paragrafo = styled.p`
-  font-size: 18px;
+  font-size: 22px;
   color: #FFFFFF;
   line-height: 1.5;
   margin: 0;
@@ -129,18 +129,33 @@ export const Paragrafo = styled.p`
 `;
 
 export const Hamburguer = styled.img`
-  width: 300px;
+  width: 500px;
   object-fit: contain;
   margin-right: -60px;
+  cursor: pointer;
 
+
+  @keyframes jump-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateY(-9px) }
+  35% { transform: translateY(-9px) rotate(17deg) }
+  55% { transform: translateY(-9px) rotate(-17deg) }
+  65% { transform: translateY(-9px) rotate(17deg) }
+  75% { transform: translateY(-9px) rotate(-17deg) }
+  100% { transform: translateY(0) rotate(0) }
+  }
 
   @media (max-width: 768px) {
     position: absolute;
-    right: -80px; 
+    right: -60px; 
     top: 50%; 
     transform: translateY(-50%); 
     width: 280px; 
     z-index: 2;
+  }
+
+  &:hover {
+    animation: jump-shaking 1.25s 2;
   }
 `;
 
@@ -341,10 +356,16 @@ export const PigzLogo = styled.img`
   max-width: 200px;
   width: 40%;
   display: block;
+  transition: transform ease-in-out 0.15s;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     max-width: 140px;
     width: 35%;
+  }
+
+  &:hover{
+    transform: scale(1.2)
   }
 `;
 

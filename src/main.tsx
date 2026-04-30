@@ -10,7 +10,6 @@ import { GlobalStyle } from './components/styles/GlobalStyle.ts'
 import { PricingSection } from './components/cards/PricingCard.tsx'
 import { Footer } from './components/footer/Footer.tsx'
 
-<link rel="stylesheet" href="https://use.typekit.net/iiz4uxt.css"></link>
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
