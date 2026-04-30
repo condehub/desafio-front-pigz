@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<!-- Fundo branco com cantos arredondados (rx="14") para não aparecer nas pontas -->
+<rect width="64" height="64" rx="14" fill="#FFFFFF" />
+
+<g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)"
+fill="#FA641E" stroke="none">
+<path d="M90 630 c-82 -20 -94 -69 -88 -356 5 -280 -9 -269 318 -269 208 0
+239 2 263 17 50 33 52 46 52 298 0 331 15 314 -295 317 -118 1 -231 -2 -250
+-7z m341 -188 c23 -26 29 -42 29 -78 0 -39 -5 -51 -34 -80 -30 -30 -40 -34
+-85 -34 l-51 0 0 -39 c0 -45 -18 -64 -57 -59 l-28 3 -3 150 c-1 82 0 155 3
+163 4 11 26 13 101 10 94 -3 96 -4 125 -36z"/>
+<path d="M253 374 c-7 -20 22 -45 43 -37 8 3 14 16 14 29 0 19 -5 24 -25 24
+-15 0 -28 -7 -32 -16z"/>
+<path d="M353 374 c-7 -20 22 -45 44 -37 8 3 13 15 11 27 -4 27 -45 35 -55 10z"/>
+</g>
+</svg>
